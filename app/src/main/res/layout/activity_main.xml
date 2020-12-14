@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/timg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="284dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="96dp"
+        android:gravity="center"
+        android:text="班主任工作管理系统"
+        android:textColor="#F5F464"
+        android:textSize="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="288dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="276dp"
+        android:background="#000000"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="账号/手机"
+        android:textColor="#F5F464"
+        android:textColorHint="#F5F464"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="288dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:background="#000000"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="密码"
+        android:textColor="#F5F464"
+        android:textColorHint="#F5F464"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="160dp"
+        android:alpha="255"
+        android:background="@null"
+        android:text="BEGIN"
+        android:textColor="#F5F464"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="160dp"
+        android:alpha="255"
+        android:background="@null"
+        android:text="REGISTER"
+        android:textColor="#F5F464"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

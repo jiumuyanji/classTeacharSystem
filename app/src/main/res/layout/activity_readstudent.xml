@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".ReadstudentActivity">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="学号："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="姓名："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="年龄："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="性别："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="政治面貌："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="评语："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status" />
+
+    <EditText
+        android:id="@+id/id1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/id1" />
+
+    <EditText
+        android:id="@+id/sex1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/sex"
+        app:layout_constraintTop_toBottomOf="@+id/age1" />
+
+    <EditText
+        android:id="@+id/age1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <EditText
+        android:id="@+id/status1"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/status"
+        app:layout_constraintTop_toBottomOf="@+id/sex1" />
+
+    <EditText
+        android:id="@+id/comment1"
+        android:layout_width="307dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFB9C"
+        android:text="update"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFB9C"
+        android:text="delete"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/update"
+        app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+    <Button
+        android:id="@+id/visit"
+        android:layout_width="296dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="48dp"
+        android:text="查看家访记录"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

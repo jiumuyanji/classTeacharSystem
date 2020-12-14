@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".ReadvisitActivity">
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:text="学号："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:text=""
+        android:textSize="30dp"
+
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:text="姓名："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="88dp"
+        android:text=""
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:text="家访情况："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/content1"
+        android:layout_width="298dp"
+        android:layout_height="321dp"
+        android:textSize="30dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:text="时间："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFB9C"
+        android:text="delete"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

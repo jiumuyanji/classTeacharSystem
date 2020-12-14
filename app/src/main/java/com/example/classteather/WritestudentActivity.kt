@@ -1,0 +1,38 @@
+package com.example.classteather
+
+import android.content.ContentValues
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_writestudent.*
+
+class WritestudentActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_writestudent)
+        val dbHelper=MyDatabaseHelper(this,"class.db",1)
+        save.setOnClickListener {
+            val db = dbHelper.writableDatabase
+            val values1= ContentValues().apply{
+                put("id",id1.text.toString())
+                put("name",name1.text.toString())
+                put("age",age1.text.toString())
+                put("sex",sex1.text.toString())
+                put("status",status1.text.toString())
+                put("comment",comment1.text.toString())
+            }
+            db.insert("student",null,values1)
+            Toast.makeText(this,"Save succeeded", Toast.LENGTH_SHORT).show()
+        }
+        back.setOnClickListener {
+            val intent= Intent(this,StudentActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    }
+
+}
+
