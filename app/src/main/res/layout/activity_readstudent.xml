@@ -150,11 +150,21 @@
 
     <Button
         android:id="@+id/visit"
-        android:layout_width="296dp"
+        android:layout_width="153dp"
         android:layout_height="46dp"
         android:layout_marginStart="48dp"
+        android:background="#FFFB9C"
         android:text="查看家访记录"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/comment1" />
 
+    <Button
+        android:id="@+id/talk"
+        android:layout_width="153dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="56dp"
+        android:background="#FFFB9C"
+        android:text="查看谈话记录"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

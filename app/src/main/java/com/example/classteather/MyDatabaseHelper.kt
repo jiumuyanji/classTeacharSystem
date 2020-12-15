@@ -12,6 +12,7 @@ class MyDatabaseHelper (val context: Context, name:String, version:Int):
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL("create table student(id text,name text,age text,sex text,status text,comment text)")
         db.execSQL("create table visit(id text,name text,content text,time text)")
+        db.execSQL("create table talk(id text,name text,content text,time text)")
         Toast.makeText(context,"Create succeeded", Toast.LENGTH_SHORT).show()
     }
 

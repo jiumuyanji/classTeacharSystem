@@ -46,6 +46,10 @@ class StudentActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        back.setOnClickListener {
+            finish()
+        }
     }
     override fun onRestart() {
         super.onRestart()

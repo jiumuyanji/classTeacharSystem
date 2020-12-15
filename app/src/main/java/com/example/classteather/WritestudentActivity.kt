@@ -25,6 +25,7 @@ class WritestudentActivity : AppCompatActivity() {
                 put("comment",comment1.text.toString())
             }
             db.insert("student",null,values1)
+            save.isEnabled=false
             Toast.makeText(this,"Save succeeded", Toast.LENGTH_SHORT).show()
         }
         back.setOnClickListener {

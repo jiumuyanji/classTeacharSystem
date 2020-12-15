@@ -35,6 +35,13 @@ class ReadstudentActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        talk.setOnClickListener {
+            val intent=Intent(this,TalklistActivity::class.java)
+            intent.putExtra("extra_id",extraData.toString())
+            intent.putExtra("extra_name",name1.text.toString())
+            startActivity(intent)
+            finish()
+        }
         back.setOnClickListener {
             val intent= Intent(this,StudentActivity::class.java)
             startActivity(intent)

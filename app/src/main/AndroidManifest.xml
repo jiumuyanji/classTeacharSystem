@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QueryStudentActivity"></activity>
+        <activity android:name=".ReadtalkActivity"></activity>
+        <activity android:name=".WritetalkActivity" />
+        <activity android:name=".TalklistActivity" />
+        <activity android:name=".QueryStudentActivity" />
         <activity android:name=".ReadvisitActivity" />
         <activity android:name=".WritevisitActivity" />
         <activity android:name=".VisitlistActivity" />

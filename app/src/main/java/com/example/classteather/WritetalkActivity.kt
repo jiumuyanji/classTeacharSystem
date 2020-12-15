@@ -5,13 +5,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_writevisit.*
+import kotlinx.android.synthetic.main.activity_writetalk.*
 
-class WritevisitActivity : AppCompatActivity() {
+class WritetalkActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_writevisit)
+        setContentView(R.layout.activity_writetalk)
         val extraId=intent.getStringExtra("extra_id")
         val extraName=intent.getStringExtra("extra_name")
         id1.text=extraId.toString()
@@ -25,14 +25,14 @@ class WritevisitActivity : AppCompatActivity() {
                 put("content",content1.text.toString())
                 put("time",time1.text.toString())
             }
-            db.insert("visit",null,values1)
+            db.insert("talk",null,values1)
             save.isEnabled=false
             Toast.makeText(this,"Save succeeded", Toast.LENGTH_SHORT).show()
         }
         back.setOnClickListener {
-            val intent= Intent(this,VisitlistActivity::class.java)
-            intent.putExtra("extra_id",extraId.toString())
-            intent.putExtra("extra_name",extraName.toString())
+            val intent = Intent(this, TalklistActivity::class.java)
+            intent.putExtra("extra_id", extraId.toString())
+            intent.putExtra("extra_name", extraName.toString())
             startActivity(intent)
             finish()
         }

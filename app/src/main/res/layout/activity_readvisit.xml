@@ -75,6 +75,7 @@
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="44dp"
+        android:layout_marginTop="10dp"
         android:text="时间："
         android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,6 +87,7 @@
         android:layout_height="40dp"
         android:text=""
         android:textSize="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toEndOf="@+id/time"
         app:layout_constraintTop_toBottomOf="@+id/content1" />
 

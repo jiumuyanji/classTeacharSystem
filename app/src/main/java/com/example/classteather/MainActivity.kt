@@ -24,11 +24,11 @@ class MainActivity : AppCompatActivity() {
             else if (account==account2&&password==password2){
                 val intent = Intent(this, ChooseActivity::class.java)
                 startActivity(intent)
+                finish()
             }
             else{
                 Toast.makeText(this,"密码错误，请检查", Toast.LENGTH_SHORT).show()
             }
-            finish()
         }
         register.setOnClickListener{
             val intent = Intent(this, ZhucheActivity::class.java)
