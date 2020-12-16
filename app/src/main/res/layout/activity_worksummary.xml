@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/open"
-    tools:context=".VisitlistActivity">
-
+    tools:context=".WorksummaryActivity">
     <ListView
         android:id="@+id/list2"
         android:layout_width="361dp"
@@ -39,5 +38,4 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
