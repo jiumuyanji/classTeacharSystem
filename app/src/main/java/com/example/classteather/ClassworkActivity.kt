@@ -22,5 +22,8 @@ class ClassworkActivity : AppCompatActivity() {
             val intent = Intent(this, ClassmeetinglistActivity::class.java)
             startActivity(intent)
         }
+        back.setOnClickListener {
+            finish()
+        }
     }
 }

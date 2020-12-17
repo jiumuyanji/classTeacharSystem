@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReadclassmeetingActivity"></activity>
+        <activity android:name=".AchievementnumberActivity"></activity>
+        <activity android:name=".AvgachievementActivity" />
+        <activity android:name=".QueryachievementActivity" />
+        <activity android:name=".ReadachievementActivity" />
+        <activity android:name=".AchievementlistActivity" />
+        <activity android:name=".WriteachievementActivity" />
+        <activity android:name=".AddactiecementActivity" />
+        <activity android:name=".AchievementActivity" />
+        <activity android:name=".ReadclassmeetingActivity" />
         <activity android:name=".WriteclassmeetingActivity" />
         <activity android:name=".ClassmeetinglistActivity" />
         <activity android:name=".ReadworksummaryActivity" />

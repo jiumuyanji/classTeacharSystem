@@ -18,5 +18,9 @@ class ChooseActivity : AppCompatActivity() {
             val intent=Intent(this,ClassworkActivity::class.java)
             startActivity(intent)
         }
+        button3.setOnClickListener {
+            val intent=Intent(this,AchievementActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

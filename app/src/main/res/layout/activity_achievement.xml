@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".AchievementActivity">
+
+    <Button
+        android:id="@+id/addAchievement"
+        android:layout_width="267dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFB9C"
+        android:text="成绩录入"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/achievementList"
+        android:layout_width="267dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFB9C"
+        android:text="成绩总分排名列表"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAchievement" />
+
+    <Button
+        android:id="@+id/queryAchievement"
+        android:layout_width="267dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFB9C"
+        android:text="学生成绩查询"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/achievementList" />
+
+    <Button
+        android:id="@+id/avgAchievement"
+        android:layout_width="267dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFB9C"
+        android:text="学科平均分查询"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/queryAchievement" />
+
+    <Button
+        android:id="@+id/achievementNumber"
+        android:layout_width="267dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFB9C"
+        android:text="分数段人数统计"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avgAchievement" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="56dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

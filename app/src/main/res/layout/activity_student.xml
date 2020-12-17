@@ -17,12 +17,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/query"
+        android:id="@+id/back"
         android:layout_width="91dp"
         android:layout_height="75dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
-        android:text="query"
+        android:text="back"
         android:textSize="20dp"
         android:background="#FFFB9C"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,16 +38,16 @@
         android:text="add"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/query" />
+        app:layout_constraintEnd_toStartOf="@+id/back" />
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/query"
         android:layout_width="91dp"
         android:layout_height="75dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="16dp"
         android:background="#FFFB9C"
-        android:text="back"
+        android:text="query"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/add" />

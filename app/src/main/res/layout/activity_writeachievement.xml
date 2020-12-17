@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".WriteachievementActivity">
+
+    <EditText
+        android:id="@+id/ZhengZhi1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ZhengZhi"
+        app:layout_constraintTop_toBottomOf="@+id/LiShi1" />
+
+    <EditText
+        android:id="@+id/DiLi1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/DiLi"
+        app:layout_constraintTop_toBottomOf="@+id/ZhengZhi1" />
+
+    <TextView
+        android:id="@+id/WaiYu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="外语："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShuXue" />
+
+    <TextView
+        android:id="@+id/ShuXue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="数学："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YuWen" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="298dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="name id"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/YuWen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="语文："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/YuWen1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/YuWen"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/ShuXue1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ShuXue"
+        app:layout_constraintTop_toBottomOf="@+id/YuWen1" />
+
+    <EditText
+        android:id="@+id/WaiYu1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/WaiYu"
+        app:layout_constraintTop_toBottomOf="@+id/ShuXue1" />
+
+    <EditText
+        android:id="@+id/WuLi1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/WuLi"
+        app:layout_constraintTop_toBottomOf="@+id/WaiYu1" />
+
+    <EditText
+        android:id="@+id/HuaXue1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/HuaXue"
+        app:layout_constraintTop_toBottomOf="@+id/WuLi1" />
+
+    <EditText
+        android:id="@+id/ShengWu1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/ShengWu"
+        app:layout_constraintTop_toBottomOf="@+id/HuaXue1" />
+
+    <EditText
+        android:id="@+id/LiShi1"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:hint="0"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/LiShi"
+        app:layout_constraintTop_toBottomOf="@+id/ShengWu1" />
+
+    <TextView
+        android:id="@+id/WuLi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="物理："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WaiYu" />
+
+    <TextView
+        android:id="@+id/HuaXue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="化学："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WuLi" />
+
+    <TextView
+        android:id="@+id/ShengWu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="生物："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HuaXue" />
+
+    <TextView
+        android:id="@+id/LiShi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="44dp"
+        android:text="历史："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShengWu" />
+
+    <TextView
+        android:id="@+id/DiLi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="地理："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ZhengZhi" />
+
+    <TextView
+        android:id="@+id/ZhengZhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="政治："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LiShi" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="118dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="save"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="118dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
