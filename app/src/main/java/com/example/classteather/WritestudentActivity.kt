@@ -34,6 +34,5 @@ class WritestudentActivity : AppCompatActivity() {
             finish()
         }
     }
-
 }
 

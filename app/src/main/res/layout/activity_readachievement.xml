@@ -23,7 +23,7 @@
         android:layout_width="215dp"
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/ZhengZhi"
         app:layout_constraintTop_toBottomOf="@+id/LiShi1" />
@@ -32,7 +32,7 @@
         android:id="@+id/DiLi1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/DiLi"
         app:layout_constraintTop_toBottomOf="@+id/ZhengZhi1" />
@@ -41,7 +41,7 @@
         android:id="@+id/total1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="30dp"
         app:layout_constraintStart_toEndOf="@+id/total"
         app:layout_constraintTop_toBottomOf="@+id/DiLi1" />
@@ -82,7 +82,7 @@
         android:id="@+id/YuWen1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/YuWen"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -92,7 +92,7 @@
         android:layout_width="215dp"
         android:layout_height="40dp"
         android:layout_marginTop="3dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/ShuXue"
         app:layout_constraintTop_toBottomOf="@+id/YuWen1" />
@@ -102,7 +102,7 @@
         android:layout_width="215dp"
         android:layout_height="40dp"
         android:layout_marginTop="2dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/WaiYu"
         app:layout_constraintTop_toBottomOf="@+id/ShuXue1" />
@@ -111,7 +111,7 @@
         android:id="@+id/WuLi1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/WuLi"
         app:layout_constraintTop_toBottomOf="@+id/WaiYu1" />
@@ -120,7 +120,7 @@
         android:id="@+id/HuaXue1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/HuaXue"
         app:layout_constraintTop_toBottomOf="@+id/WuLi1" />
@@ -130,7 +130,7 @@
         android:layout_width="215dp"
         android:layout_height="40dp"
         android:layout_marginTop="1dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/ShengWu"
         app:layout_constraintTop_toBottomOf="@+id/HuaXue1" />
@@ -139,7 +139,7 @@
         android:id="@+id/LiShi1"
         android:layout_width="215dp"
         android:layout_height="40dp"
-        android:hint="0"
+        android:text="0"
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/LiShi"
         app:layout_constraintTop_toBottomOf="@+id/ShengWu1" />

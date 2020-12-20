@@ -11,6 +11,7 @@ class WriteachievementActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_writeachievement)
+        Toast.makeText(this, "不能留空，用0代替", Toast.LENGTH_SHORT).show()
         val extraId = intent.getStringExtra("extra_id")
         val extraName = intent.getStringExtra("extra_name")
         val extraTextName = intent.getStringExtra("extra_textName")
