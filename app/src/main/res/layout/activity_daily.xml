@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".DailyActivity">
+
+    <Button
+        android:id="@+id/classLeader"
+        android:layout_width="297dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="92dp"
+        android:background="#FFFB9C"
+        android:text="班干部管理"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="297dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="56dp"
+        android:background="#FFFB9C"
+        android:text="缴费记录"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classLeader" />
+
+
+    <Button
+        android:id="@+id/classActivity"
+        android:layout_width="297dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFB9C"
+        android:text="班级活动"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay" />
+
+    <Button
+        android:id="@+id/duty"
+        android:layout_width="297dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFB9C"
+        android:text="班级值日信息"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classActivity" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="104dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

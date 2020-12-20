@@ -39,7 +39,6 @@ class ReadworkplanActivity : AppCompatActivity() {
                 create()
                 show()
             }
-            Toast.makeText(this ,"Save succeeded", Toast.LENGTH_SHORT).show()
         }
         update.setOnClickListener {
             val values1= ContentValues().apply{

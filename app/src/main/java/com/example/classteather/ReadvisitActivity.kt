@@ -41,7 +41,6 @@ class ReadvisitActivity : AppCompatActivity() {
                 create()
                 show()
             }
-            Toast.makeText(this ,"Save succeeded", Toast.LENGTH_SHORT).show()
         }
     }
 }

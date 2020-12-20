@@ -22,5 +22,13 @@ class ChooseActivity : AppCompatActivity() {
             val intent=Intent(this,AchievementActivity::class.java)
             startActivity(intent)
         }
+        button2.setOnClickListener {
+            val intent=Intent(this,DailyActivity::class.java)
+            startActivity(intent)
+        }
+        button5.setOnClickListener {
+            val intent=Intent(this,ZhucheActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

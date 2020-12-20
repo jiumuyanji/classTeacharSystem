@@ -16,7 +16,11 @@ class MyDatabaseHelper (val context: Context, name:String, version:Int):
         db.execSQL("create table workPlan(title text,content text,time text)")
         db.execSQL("create table workSummary(title text,content text,time text)")
         db.execSQL("create table classMeeting(theme text,content text,time text)")
+        db.execSQL("create table classActivity(theme text,content text,time text)")
+        db.execSQL("create table pay(title text,want text,last text,num text,content text,time text)")
         db.execSQL("create table achievement(id text,name text,textName text,YuWen real,ShuXue real,WaiYu real,WuLi real,HuaXue real,ShengWu real,LiShi real,ZhengZhi real,DiLi real,total real)")
+        db.execSQL("create table classLeader(id text,name text,work text)")
+        db.execSQL("create table duty(id text,name text,duty text,time text)")
         Toast.makeText(context,"Create succeeded", Toast.LENGTH_SHORT).show()
     }
 

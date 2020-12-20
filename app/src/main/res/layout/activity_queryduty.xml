@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".QuerydutyActivity">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="学号："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="姓名："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="时间："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/duty"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="内容："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <EditText
+        android:id="@+id/id1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/id1" />
+
+    <EditText
+        android:id="@+id/time1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/duty"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <EditText
+        android:id="@+id/duty1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/duty"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+
+    <Button
+        android:id="@+id/query"
+        android:layout_width="293dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFB9C"
+        android:text="查找"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duty1" />
+
+    <ListView
+        android:id="@+id/result"
+        android:layout_width="342dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/query"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

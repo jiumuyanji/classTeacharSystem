@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/open"
+    tools:context=".ReadpayActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="主题："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/want"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="预计金额："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/last"
+        android:layout_width="154dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="实际金额："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/want" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="人数："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="时间："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="93dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:text="详细："
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/want1"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/want"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/num"
+        app:layout_constraintTop_toBottomOf="@+id/last1" />
+
+    <EditText
+        android:id="@+id/last1"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@+id/last"
+        app:layout_constraintTop_toBottomOf="@+id/want1" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="206dp"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/time"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <EditText
+        android:id="@+id/content1"
+        android:layout_width="298dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFB9C"
+        android:text="update"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFB9C"
+        android:text="delete"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/update"
+        app:layout_constraintTop_toBottomOf="@+id/content1" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="81dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFB9C"
+        android:text="back"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@+id/content1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
